@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="dashboard">
+    <!-- Settings Panel -->
+    <div class="settings-panel">
+      <h2>Recipe Preferences</h2>
+      <div class="dropdown">
+        <label for="recipe-type">Recipe Type</label>
+        <select id="recipe-type">
+          <option value="vegan">Vegan</option>
+          <option value="vegetarian">Vegetarian</option>
+          <option value="nonveg">Non-Vegetarian</option>
+        </select>
+      </div>
+      <div class="toggle-group">
+        <label class="switch">
+          <span>Show Nutrition Info</span>
+          <input type="checkbox" id="nutrition-toggle" checked>
+          <span class="slider"></span>
+        </label>
+      </div>
+      <div class="toggle-group">
+        <label class="switch">
+          <span>Enable Quick Recipes</span>
+          <input type="checkbox" id="quick-recipes-toggle">
+          <span class="slider"></span>
+        </label>
+      </div>
+      <div class="filters">
+        <label>Filter Tags</label>
+        <div class="tags">
+          <span class="tag">Breakfast</span>
+          <span class="tag active">Lunch</span>
+          <span class="tag">Dinner</span>
+          <span class="tag">Snacks</span>
+        </div>
+      </div>
+      <div class="buttons">
+        <button class="btn cancel">Cancel</button>
+        <button class="btn save">Save Changes</button>
+      </div>
+    </div>
+
+    <!-- Right Panel -->
+    <div class="right-panel">
+      <div class="recipe-preview">
+        <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe" alt="Recipe" class="recipe-image">
+        <div class="recipe-content">
+          <div class="recipe-header">
+            <h2 class="recipe-title">Quinoa Buddha Bowl</h2>
+            <span class="recipe-type">Vegan</span>
+          </div>
+          
+          <div class="recipe-meta">
+            <div class="meta-item">
+              <i class="icon">⏰</i>
+              <span>25 mins</span>
+            </div>
+            <div class="meta-item">
+              <i class="icon">👥</i>
+              <span>2 servings</span>
+            </div>
+            <div class="meta-item">
+              <i class="icon">🔥</i>
+              <span>Medium</span>
+            </div>
+          </div>
+
+          <div class="nutrition-info">
+            <div class="nutrition-item">
+              <div class="nutrition-value">425</div>
+              <div class="nutrition-label">Calories</div>
+            </div>
+            <div class="nutrition-item">
+              <div class="nutrition-value">12g</div>
+              <div class="nutrition-label">Protein</div>
+            </div>
+            <div class="nutrition-item">
+              <div class="nutrition-value">58g</div>
+              <div class="nutrition-label">Carbs</div>
+            </div>
+            <div class="nutrition-item">
+              <div class="nutrition-value">22g</div>
+              <div class="nutrition-label">Fats</div>
+            </div>
+          </div>
+
+          <div class="recipe-actions">
+            <a href="#" class="view-recipe">
+              View Full Recipe
+              <span class="icon">→</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
